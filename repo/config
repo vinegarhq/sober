@@ -6,3 +6,4 @@ indexed-deltas=true
 [flatpak]
 title=Sober
 homepage=https://sober.vinegarhq.org
+icon=https://sober.vinegarhq.org/sober.svg
