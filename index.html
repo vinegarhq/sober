@@ -1,54 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>sober</title>
-</head>
-<body>
-    <section class="Card intro">
-        <span class="date">August 1, 2024</span>
-        <span class="heading">Roblox on your Linux desktop</span>
-        <span class="desc">We're testing Sober, a prototype of a new way to run Roblox on Linux, giving you a playable experience without the hassle of virtual machines or emulators.</span>
-        <a href="#introducing-sober" class="Button">Learn More -></a>
-    </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Sober - Roblox on Linux</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <meta
+            name="description"
+            content="We're testing Sober, a new way to run Roblox on Linux. No virtual machines or emulators."
+        />
+        <meta property="og:url" content="https://sober.vinegarhq.org" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Sober - Roblox on Linux" />
+        <meta
+            property="og:description"
+            content="We're testing Sober, a new way to run Roblox on Linux. No virtual machines or emulators."
+        />
+        <meta name="theme-color" content="#75942a" />
+    </head>
+    <body>
+        <section class="Card intro">
+            <span class="date">August 1, 2024</span>
+            <span class="heading">Roblox on your Linux desktop</span>
+            <span class="desc"
+                >We're testing Sober, a new way to run Roblox on Linux. No
+                virtual machines or emulators.</span
+            >
+            <a href="#introducing-sober" class="Button filled">Learn More -></a>
+        </section>
 
-    <section class="Card text">
-        <h1 id="introducing-sober" class="h1">Introducing Sober</h1>
+        <section class="Card text">
+            <h1 id="introducing-sober" class="h1">Introducing Sober</h1>
 
-        <p>
-            We're testing Sober, a brand new way to get Roblox on your Linux desktop.
-            It's a novel approach, separate to other compatibility software like Wine, Android emulators, or virtual machines.
-            Sober works by creating a specialized runtime just for Roblox's code, ensuring compatibility.
-        </p>
-        <p>
-            We'd like to stress that Sober is an experimental project. It's a passion project rather than production-grade code.
-            Sober's runtime incurs a performance penalty compared to Windows. While the results vary for everyone, generally Sober offers 1/3rd the performance of Windows.
-        </p>
-        <p>
-            Sober is unfortunately closed-source. This could change in the future.
-        </p>
-        <p>
-            We distribute Sober as a Flatpak package. To use it, just <a href="https://flathub.org/setup">make sure Flatpak is installed</a> and install the package. Then, open your favorite game. You'll be prompted to install Roblox. After that, you may visit any experiences on the platform, interact with other users, etc.
-        </p>
-        <p>
-            Sober is a labor of love, and we'd love for you to try it out! We hope you enjoy your time.
-        </p>
-    </section>
+            <p>
+                We're testing Sober, a brand new way to get Roblox on your Linux
+                desktop. It's a novel approach, separate to other compatibility
+                software like Wine, Android emulators, or virtual machines.
+                Sober works by creating a specialized runtime just for Roblox's
+                code, ensuring compatibility.
+            </p>
+            <p>
+                We'd like to stress that Sober is an experimental project. It's
+                a passion project rather than production-grade code. Sober's
+                runtime incurs a performance penalty compared to Windows. While
+                the results vary for everyone, generally Sober offers 1/3rd the
+                performance of Windows.
+            </p>
+            <p>
+                Sober is unfortunately closed-source. This could change in the
+                future.
+            </p>
+            <p>
+                We distribute Sober as a Flatpak package. Here's how to use it:
+            </p>
+            <ol class="instructions">
+                <li>
+                    <a href="https://flathub.org/setup"
+                        >Make sure Flatpak is installed</a
+                    >
+                </li>
+                <li>Install the package using one of the methods below</li>
+                <li>Open your favorite Roblox experience</li>
+                <li>Sober will prompt you for installation</li>
+                <li>You now have full access to Roblox!</li>
+            </ol>
+            <p>
+                Sober is a labor of love, and we'd love for you to try it out!
+                We hope you enjoy your time.
+            </p>
+        </section>
 
-    <section class="Card cta">
-        <a class="Button filled" href="/sober.flatpakref">Install</a>
-        <a class="Button" href="/notice.txt">View Legal Notice & License -></a>
-        <div class="or">or</div>
-        <div class="Command">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
-            <span>flatpak install --user https://sober.vinegarhq.org/sober.flatpakref</span>
-        </div>
-    </section>
+        <section class="Card cta">
+            <a class="Button filled" href="/sober.flatpakref"
+                >Download Flatpak</a
+            >
+            <!-- <a class="Button" href="/notice.txt"
+				>View Legal Notice & License -></a
+			> -->
+            <div class="or">or</div>
+            <div class="Command">
+                <span
+                    >flatpak install --user
+                    https://sober.vinegarhq.org/sober.flatpakref</span
+                >
+            </div>
+        </section>
 
-    <footer>
-        <span>Copyright 2024, the Sober developers. Sober is not affiliated with Roblox in any way. Sober is unofficial software. Use at your own risk. <a href="/notice.txt">License & legal notice</a></span>
-    </footer>
-</body>
+        <footer>
+            <span
+                >Copyright 2024, the Sober developers. Sober is not affiliated
+                with Roblox in any way. Sober is unofficial software. Use at
+                your own risk.
+                <a href="/notice.txt">License & legal notice</a></span
+            >
+        </footer>
+    </body>
 </html>
