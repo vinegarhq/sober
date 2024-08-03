@@ -19,3 +19,12 @@ body:
         Logs can be found in `~/.var/app/org.vinegarhq.Sober/data/sober/appData/logs`.
     validations:
       required: true
+  - type: input
+    id: game
+    attributes:
+      label: "Roblox Experience link"
+      description: "If the bug only happens in a certain game, provide it here"
+      placeholder: "https://www.roblox.com/games/15211365104"
+    validations:
+      required: false
+      
