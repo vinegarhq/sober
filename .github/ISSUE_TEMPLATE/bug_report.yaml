@@ -1,0 +1,21 @@
+name: Bug Report
+labels: "bug"
+description: Report a problem you're having
+body:
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgement of checking existent issues
+      options:
+        - label: I have checked if my issue has already been reported, and I am certain that my problem has not already been addressed.
+          required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What problem did you encounter?
+      description: |
+        Provide a comprehensive description of the problem you're facing.
+        Don't forget to attach any additional resources you may have, such as log files and screenshots.
+        Logs can be found in `~/.var/app/org.vinegarhq.Sober/data/sober/appData/logs`.
+    validations:
+      required: true
