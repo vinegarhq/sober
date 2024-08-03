@@ -1,4 +1,4 @@
-# Sober
+# <img width="48" src="sober.svg">   Sober
 
 Sober lets users visit Roblox experiences on their Linux desktops.
 
