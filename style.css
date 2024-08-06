@@ -32,16 +32,17 @@
     --radius-xl: calc(3.25 * var(--radius-unit));
     --radius-xxl: calc(5.25 * var(--sradius-unit));
 
-    --h1: 3.815em;
-    --h2: 3.052em;
-    --h3: 2.441em;
-    --h4: 1.953em;
-    --h5: 1.563em;
-    --h6: 1.25em;
-    --p: 1em;
-    --small: 0.8em;
+    --h1: 3.815rem;
+    --h2: 3.052rem;
+    --h3: 2.441rem;
+    --h4: 1.953rem;
+    --h5: 1.563rem;
+    --h6: 1.25rem;
+    --p: 1rem;
+    --small: 0.8rem;
 
     --white: #fff;
+    --soft-black: #040404;
     --neutral-50: hsl(0, 0%, 98%);
     --neutral-100: hsl(0, 0%, 95%);
     --neutral-200: hsl(0, 0%, 86%);
@@ -52,7 +53,7 @@ body {
     font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
-    background-color: var(--neutral-50);
+    color: var(--neutral-50);
     margin: 0;
     padding: 0;
     display: flex;
@@ -60,7 +61,18 @@ body {
     justify-content: center;
     align-items: center;
     accent-color: var(--accent);
+    line-height: 1.4;
+    background-color: var(--soft-black);
 }
+
+b { font-variation-settings: "wght" 700; }
+p { font-size: var(--h6); }
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+h5 { font-size: var(--h5); }
+
 
 .lucide {
     flex-shrink: 0;
@@ -76,15 +88,23 @@ body {
 
 .Card.text {
     display: block;
-    padding-top: var(--space-xxl);
-    padding-bottom: var(--space-lg);
+    padding: var(--space-lg);
+    padding-bottom: var(--space-xl);
     width: clamp(120px, 60em, 87%);
+    line-height: 1.6;
     font-variation-settings: "wght" 500;
-    font-size: 1.15em;
-    color: #0d0d0d;
+    color: var(--neutral-50);
+}
+
+.Card.accent-one {
+    background-color: #e1352c;
+}
+.Card.accent-two {
+    background-color: #f97d0f;
 }
 
 .instructions {
+    font-size: var(--h6);
     line-height: 2em;
     height: auto;
 }
@@ -95,10 +115,10 @@ body {
     gap: 1rem;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: var(--space-xxl);
+    padding-bottom: var(--space-xl);
     width: clamp(120px, 60em, 87%);
     font-variation-settings: "wght" 500;
-    font-size: 1.15em;
+    font-size: var(--h6);
 }
 
 .Card.intro {
@@ -106,14 +126,28 @@ body {
     overflow: hidden;
     text-align: center;
     color: var(--white);
-    height: 90vh;
+    height: 80vh;
+    margin-bottom: var(--xl);
     /* border-radius: var(--radius-sm); */
-    background-color: black;
+    background-color: #f99b10;
     background-image: url(/amber-l-crop.webp);
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: cover;
-    background-size: cover;
+}
+
+.Card.intro::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+}
+
+.Card.intro span, .Card.intro a {
+    z-index: 2;
 }
 
 .Card.intro .date {
@@ -122,14 +156,15 @@ body {
 }
 
 .Card.intro .heading {
-    font-size: var(--h3);
+    font-size: var(--h2);
     font-variation-settings: "wght" 550;
 }
 
 .Card.intro .desc {
-    padding: var(--space-sm);
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-md);
     max-width: 50ch;
-    font-size: var(--h6);
+    font-size: var(--h5);
     font-variation-settings: "wght" 600;
     color: cornsilk;
 }
@@ -143,13 +178,18 @@ body {
     padding-bottom: 0.65em;
     border-radius: 9999px;
     font: inherit;
-    font-size: var(--p);
+    font-size: inherit;
     user-select: none;
     font-variation-settings: "wght" 600;
 }
 
+.Card.intro .Button.filled {
+    background-color: var(--soft-black);
+    color: var(--neutral-100);
+}
+
 a {
-    color: #030303;
+    color: var(--neutral-100);
 }
 
 a.Button {
@@ -161,9 +201,8 @@ a.Button:hover {
 }
 
 .Button.filled {
-    background-color: #030303;
-    color: var(--neutral-100);
-    font-size: 1.1em;
+    background-color: var(--neutral-100);
+    color: var(--soft-black);
 }
 
 .Command {
@@ -172,8 +211,8 @@ a.Button:hover {
     align-items: center;
     flex-direction: row;
     gap: var(--space-md);
-    background-color: var(--neutral-100);
-    color: #121212;
+    background-color: #121212;
+    color: var(--neutral-200);
     border-radius: 9999px;
     padding: var(--space-md);
     font-family: monospace;
@@ -184,13 +223,13 @@ a.Button:hover {
     padding-left: var(--space-sm);
     padding-right: var(--space-sm);
     font-size: var(--p);
+    font-variation-settings: "wght" 550;
 }
 
 footer {
-    background-color: var(--neutral-100);
+    color: var(--neutral-200);
     border-top-left-radius: var(--space-sm);
     border-top-right-radius: var(--space-sm);
     padding: var(--space-xl);
-    color: #030303;
     font-variation-settings: "wght" 500;
 }
