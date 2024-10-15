@@ -8,5 +8,5 @@ This GitHub repository serves as a issue tracker for bugs or feature suggestions
 
 See [sober.vinegarhq.org](https://sober.vinegarhq.org) for more information.
 
-
-[LATEST_UPDATE]: [VERSION NO.]
+[UPDATED?]
+[LATEST_UPDATE_DATE]: [VERSION NO.]
