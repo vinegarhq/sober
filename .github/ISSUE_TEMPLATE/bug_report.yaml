@@ -16,7 +16,7 @@ body:
       description: |
         Provide a comprehensive description of the problem you're facing.
         Don't forget to attach any additional resources you may have, such as log files and screenshots.
-        Logs can be found in `~/.var/app/org.vinegarhq.Sober/data/sober/appData/logs`.
+        Latest log can be found in `~/.var/app/org.vinegarhq.Sober/data/sober/sober_logs/latest.log`.
     validations:
       required: true
   - type: input
