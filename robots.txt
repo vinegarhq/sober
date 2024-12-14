@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow: /app
+Disallow: /update
+Disallow: /repo
