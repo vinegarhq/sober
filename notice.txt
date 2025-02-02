@@ -1,11 +1,30 @@
++---------------------------------------------------+
+| sober - Licensing & legal notice - Read carefully |
++---------------------------------------------------+
+
+* EXPERIMENTAL RESEARCH PROJECT - USE SOBER AT YOUR OWN RISK
+* Privacy Notice: https://sober.vinegarhq.org/privacy.txt
+* Last updated: Februrary 1, 2025
+
+
 The Sober project is a free unofficial application runtime made to run Roblox on Linux. It is an unofficial community project and it does 
 not generate any revenue for its authors whatsoever. Sober is completely unaffiliated with Roblox or its partners. Sober is not affiliated
 with Google, Android, or the Android Open Source Project. Sober is not endorsed by any of the projects, persons, or companies listed below.
 The Sober project does not support any misuse of Roblox systems or platforms, in fact we have measures in place to prevent such usage of our
 software. Sober is experimental software that comes with NO WARRANTY WHATSOEVER. Use at your own risk.
 
+Given Sober's experimental nature, and given Roblox does *NO* testing or quality assurance for Sober clients, there is a chance that
+moderation actions may be taken on your account as a result of using Sober. We're not responsible for Roblox's actions, and Roblox
+isn't responsible for our actions either.
 
-Copyright (c) 2024 VinegarHQ & Sober contributors
+Sober is a software interoperability layer, and a project intended purely for research. We take no responsibility for the actions of
+our users, since we only provide a simple software layer that links Roblox to native Linux libraries. We also don't redistribute any
+of Roblox's intellectual property or code. Instead, users download the Roblox Application Bundle (APK files) themselves. Users are given
+an option to connect to Google Play in-app to download the bundle automatically, but it's strictly the user's choice & responsibility.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Copyright (c) 2025 VinegarHQ & Sober contributors
 All Rights Reserved.
 
 Use in binary form, without modification, is permitted provided the following
@@ -22,8 +41,53 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 
 
+We make use of various projects, some of which require their license to be preserved. Here's their respective licenses:
+-----------------------------------------------------------------------------------------------------------------------
 
-The Sober project makes use of various projects which require their license to be preserved in all copies of the software.
+
+=============
+= mimalloc: =
+=============
+MIT License
+
+Copyright (c) 2018-2021 Microsoft Corporation, Daan Leijen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+==========
+= detex: =
+==========
+Copyright (c) 2015 Harm Hanemaaijer <fgenfb@yahoo.com>
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 
 
@@ -205,7 +269,6 @@ AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
 OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 SUCH DAMAGE.
-
 
 
 
