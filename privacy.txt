@@ -1,0 +1,34 @@
++-----------------------------------------+
+| sober - Privacy Notice - Read carefully |
++-----------------------------------------+
+
+* EXPERIMENTAL RESEARCH PROJECT - USE SOBER AT YOUR OWN RISK
+* License & Notice: https://sober.vinegarhq.org/notice.txt
+* Last updated: Februrary 1, 2025
+
+
+Sober is an experimental software interoperability layer, which lets users run Roblox on Linux.
+
+The data collected and the third parties involved differ depending on how you use our services.
+
+* When you visit our website; when you install Sober using your package manager:
+  Your device will connect to Cloudflare, as they're our CDN provider.
+  Please see: https://www.cloudflare.com/privacypolicy/
+
+* When you open the Sober app on your device:
+   - We'll make a network request to Sober to check for updates, which also goes through Cloudflare.
+     Please see: https://www.cloudflare.com/privacypolicy/
+   - Of course, Sober will connect to Roblox services & open the Roblox app.
+     Roblox has its own privacy policy, which can be found here:
+     https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy
+
+* When you use the *optional* Automatic Downloads feature:
+   - We'll make a network request to Sober to make Automatic Downloads work, which also goes through Cloudflare.
+     Please see: https://www.cloudflare.com/privacypolicy/
+   - The following anonymous information is sent along with this request & retained for analytics and error tracking:
+       * Your current Sober version
+       * The currently installed Roblox version (or none, if you've never installed Roblox before)
+       * If the request failed, we'll send an error code explaining why the previous install failed
+   - Your client will then receive a Google Play CDN download link, hosted by Google.
+     We'll download the bundle from there.
+     Google's privacy policy is here: https://policies.google.com/privacy
