@@ -4,7 +4,7 @@
 
 * EXPERIMENTAL RESEARCH PROJECT - USE SOBER AT YOUR OWN RISK
 * License & Notice: https://sober.vinegarhq.org/notice.txt
-* Last updated: Februrary 1, 2025
+* Last updated: Februrary 13, 2025
 
 
 Sober is an experimental software interoperability layer, which lets users run Roblox on Linux.
@@ -32,3 +32,8 @@ The data collected and the third parties involved differ depending on how you us
    - Your client will then receive a Google Play CDN download link, hosted by Google.
      We'll download the bundle from there.
      Google's privacy policy is here: https://policies.google.com/privacy
+
+* When you use the *optional* server location indicator feature & visit an experience:
+   - Sober has an optional feature to show you the location of the Roblox server you connected to.
+   - To make it work, we'll connect to `ipinfo.io` and send the IP of the Roblox server you connected to.
+   - This is optional, and we send the Roblox server IP, *NOT* your IP.
