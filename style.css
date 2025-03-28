@@ -143,7 +143,7 @@ h5 { font-size: var(--h5); }
     width: 100%;
     height: 100%;
     background-color: transparent;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(6px);
 }
 
 .Card.intro span, .Card.intro a, .Card.intro div {
@@ -162,7 +162,7 @@ h5 { font-size: var(--h5); }
 
 .Card.intro .desc {
     padding-top: var(--space-sm);
-    padding-bottom: var(--space-md);
+    padding-bottom: var(--space-lg);
     max-width: 50ch;
     font-size: var(--h5);
     font-variation-settings: "wght" 600;
@@ -184,8 +184,8 @@ h5 { font-size: var(--h5); }
 }
 
 .Card.intro .Button.filled {
-    background-color: var(--soft-black);
-    color: var(--neutral-100);
+    background-color: hsla(0, 0%, 100%, 12%);
+    color: var(--white);
 }
 
 a {
