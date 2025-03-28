@@ -133,7 +133,8 @@ h5 { font-size: var(--h5); }
     background-image: url(/amber-l-crop.webp);
     background-repeat: no-repeat;
     background-clip: border-box;
-    background-position: cover;
+    background-position-x: right;
+    background-position-y: bottom;
 }
 
 .Card.intro::before {
@@ -143,7 +144,7 @@ h5 { font-size: var(--h5); }
     width: 100%;
     height: 100%;
     background-color: transparent;
-    backdrop-filter: blur(6px);
+    /* backdrop-filter: blur(6px); */
 }
 
 .Card.intro span, .Card.intro a, .Card.intro div {
