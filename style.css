@@ -146,7 +146,7 @@ h5 { font-size: var(--h5); }
     backdrop-filter: blur(12px);
 }
 
-.Card.intro span, .Card.intro a {
+.Card.intro span, .Card.intro a, .Card.intro div {
     z-index: 2;
 }
 
