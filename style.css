@@ -206,13 +206,6 @@ a.Button:hover {
     color: var(--soft-black);
 }
 
-.Card.cta .or {
-    padding-left: var(--space-sm);
-    padding-right: var(--space-sm);
-    font-size: var(--p);
-    font-variation-settings: "wght" 550;
-}
-
 footer {
     color: var(--neutral-200);
     border-top-left-radius: var(--space-sm);
