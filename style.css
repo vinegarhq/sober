@@ -206,20 +206,6 @@ a.Button:hover {
     color: var(--soft-black);
 }
 
-.Command {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: var(--space-md);
-    background-color: #121212;
-    color: var(--neutral-200);
-    border-radius: 9999px;
-    padding: var(--space-md);
-    font-family: monospace;
-    font-size: var(--p);
-}
-
 .Card.cta .or {
     padding-left: var(--space-sm);
     padding-right: var(--space-sm);
