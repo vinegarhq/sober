@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /app
 Disallow: /update
 Disallow: /repo
+Disallow: /artifacts
