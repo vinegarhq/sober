@@ -4,7 +4,7 @@
 
 * EXPERIMENTAL RESEARCH PROJECT - USE SOBER AT YOUR OWN RISK
 * License & Notice: https://sober.vinegarhq.org/notice.txt
-* Last updated: Februrary 13, 2025
+* Last updated: February 13, 2025
 
 
 Sober is an experimental software interoperability layer, which lets users run Roblox on Linux.
