@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Adwaita Sans';
+    src: url('adwaitasans.ttf');
+}
+
+
+body {
+    background: #eff;
+    color: #394d43;
+    font-family: "Adwaita Sans", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32pt;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: 6000;
+}
+
+p {
+    font-size: 14pt;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #377375;
+}
+
+#banner {
+    background-image: linear-gradient(#eff, #a9ebd7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    user-select: none;
+}
+
+#banner * {
+    margin: 12px;
+}
+
+#banner img {
+    width: 240px;
+}
+
+section {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section p {
+    width: 85%;
+    max-width: 640px;
+}
+
+.hori {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px;
+    @media only screen and (max-width: 1280px) {
+        flex-direction: column;
+        margin: 32px;
+    }
+}
+
+.horismall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    @media only screen and (max-width: 1280px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.hori img {
+    width: 90vw;
+    max-width: 640px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px #394d43;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.hori img:hover {
+    scale: 1.1;
+    box-shadow: 0px 0px 32px #394d43;
+}
+
+.vert {
+    display: block;
+}
+
+.vert2 {
+    display: block;
+    margin-left: 80px;
+}
+
+.horismall .icon {
+    width: 64px;
+    height: 64px;
+    box-shadow: none;
+    margin-inline: 32px;
+}
+
+footer {
+    margin-top: 24px;
+}
+
+code {
+    background-color: #c8ddd2;
+    padding-inline: 8px;
+    border-radius: 24px;
+}
+
+hr {
+    width: 50vw;
+    max-width: 540px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    @media only screen and (max-width: 1280px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.button {
+    background: #7ed3ab;
+    color: black;
+    padding: 16px;
+    border-radius: 24px;
+}
+
+.or {
+    margin: 16px;
+}

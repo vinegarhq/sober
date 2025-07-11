@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Sober - Roblox on Linux</title>
-    <meta name="description"
-        content="We're testing Sober, a new way to run Roblox on Linux. No virtual machines or emulators. Up to twice the performance of native Windows." />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <meta property="og:url" content="https://sober.vinegarhq.org" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sober - Roblox better than ever on Linux" />
-    <meta property="og:description"
-        content="We're testing Sober, a new way to run Roblox on Linux. No virtual machines or emulators. Up to twice the performance of native Windows." />
-    <meta property="og:image" content="https://sober.vinegarhq.org/sober.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="232" />
-    <meta property="og:image:height" content="232" />
-    <meta name="theme-color" content="#bff71b" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sober</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
-    <section class="Card intro">
-        <span class="heading">Roblox, better than ever on Linux</span>
-        <span class="desc">No emulators. Double the performance.<br>Sober's an unofficial native port of Roblox to Linux.</span>
-        <div>
-            <a href="#introducing-sober" class="Button filled">Check it Out -></a>
-            <a href="https://vinegarhq.org/Sober/Home/index.html" class="Button">Documentation &#x2197;</a>
-        </span>
-    </section>
+    <div id="banner">
+        <img src="img/icon.svg" alt="">
+        <h1>Sober</h1>
+        <h2>Roblox on Linux: Reimagined</h2>
+    </div>
 
     <section class="Card text">
-        <h2 id="introducing-sober" class="h2">Introducing Sober</h2>
 
-        <p>
-            We're testing Sober, a brand new way to get Roblox on your Linux
-            desktop. It's a novel approach, separate to other compatibility
-            software like Wine, Android emulators, or virtual machines.
-            Sober works by creating a specialized runtime just for Roblox's
-            code, ensuring compatibility.
-        </p>
-        <p>
-            We'd like to stress that <b>Sober is an experimental project</b>. It's
-            a passion project rather than production-grade code. It's not supported by Roblox and may be discontinued at
-            any time. You'll probably encounter bugs or instability.
-        </p>
-        <p>
-            You can expect Sober's performance to be the same or better than
-            the Windows client running natively on the same machine. Many users report performance that surpasses any
-            official method of playing Roblox.
-        </p>
-        <p>
-            Sober is unfortunately closed-source. This could change in the
-            future.
-            We currently use GitHub as an <a href="https://github.com/vinegarhq/sober/issues">issue tracker for Sober</a>
-            (and to host <a href="https://github.com/vinegarhq/sober/tree/gh-pages">this site</a>).
-        </p>
-        <p>
-            Sober is a labor of love, and we'd love for you to try it out!
-            We hope you enjoy your time.
-            You can <a href="https://discord.gg/dzdzZ6Pps2">join our Discord server</a> for support.
-        </p>
+        <div class="hori">
+            <div class="vert">
+                <h2 id="introducing-sober" class="h2">Introducing Sober</h2>
+                <p>
+                    A brand new way to get Roblox on your Linux
+                    desktop. It's a novel approach, different from other compatibility
+                    software like Wine, Android emulators, or virtual machines.
+                    Sober works by creating a specialized runtime just for Roblox's
+                    code, ensuring compatibility and performance.
+                </p>
+            </div>
+            <img src="img/1.png" alt="">
+        </div>
+
+        <div class="hori reverse">
+            <div class="vert2">
+                <h2>Blazingly fast</h2>
+                <p>
+                    You can expect Sober's performance to be the same or better than
+                    the Windows client running natively on the same machine. Many users report performance that surpasses any
+                    official method of playing Roblox.
+                </p>
+            </div>
+            <img src="img/2.png" alt="">
+        </div>
+
+        <div class="horismall">
+            <p>
+                We'd like to stress that <b>Sober is an experimental project</b>. It's
+                a passion project rather than production-grade code. It's not supported by Roblox and may be discontinued at
+                any time. You'll probably encounter bugs or instability.
+            </p>
+            <img class="icon" src="img/info.svg" alt="">
+        </div>
+
+        <div class="horismall reverse">
+            <p>
+                Sober is unfortunately closed-source. This could change in the
+                future.
+                We currently use GitHub as an <a href="https://github.com/vinegarhq/sober/issues">issue tracker for Sober</a>
+                (and to host <a href="https://github.com/vinegarhq/sober/tree/gh-pages">this site</a>).
+            </p>
+            <img class="icon" src="img/issues.svg" alt="">
+        </div>
+
+        <div class="horismall">
+            <p>
+                Sober is a labor of love, and we'd love for you to try it out!
+                We hope you enjoy your time.
+                You can <a href="https://discord.gg/dzdzZ6Pps2">join our Discord server</a> for support.
+            </p>
+            <img class="icon" src="img/heart.svg" alt="">
+        </div>
     </section>
+    
+    <hr>
+
 
     <section class="Card">
         <div class="Card text">
@@ -87,35 +96,38 @@
         </div>
 
         <section class="Card cta">
-            <a class="Button filled" href="https://flathub.org/apps/org.vinegarhq.Sober">Get the Flatpak -></a>
+            <a class="button" href="https://flathub.org/apps/org.vinegarhq.Sober">Get the Flatpak -></a>
             <div class="or">or</div>
-            <div class="Command">
-                <span>flatpak install flathub org.vinegarhq.Sober</span>
+            <div class="command">
+                <code>flatpak install flathub org.vinegarhq.Sober</code>
             </div>
         </section>
     </section>
+
+    <hr>
 
     <section class="Card">
         <div class="Card text">
             <h2 id="faq" class="h2">Frequently Questioned Answers</h2>
 
-            <h4 id="how-does-sober-work" class="h4">How does Sober work?</h4>
+            <h3 id="how-does-sober-work" class="h4">How does Sober work?</h3>
             <p>Sober crafts a specialized runtime for the Android version of Roblox. Effectively, it bridges the small gap between Android and Linux, allowing for a native unofficial port.</p>
 
-            <h4 id="why-is-it-crashing" class="h4">Why does Sober keep crashing?</h4>
+            <h3 id="why-is-it-crashing" class="h4">Why does Sober keep crashing?</h3>
             <p>Sober is experimental software, so expect crashes. To help us fix the issue, try to provide logs by running Sober from the terminal: <code>flatpak run org.vinegarhq.Sober</code></p>
 
-            <h4 id="is-it-official" class="h4">Is Sober official? Will it get blocked by Roblox?</h4>
+            <h3 id="is-it-official" class="h4">Is Sober official? Will it get blocked by Roblox?</h3>
             <p>Sober is not affiliated with Roblox in any way. It's an unofficial community-made experimental project. Roblox may choose to prevent the Sober client from using their services.</p>
         </div>
     </section>
 
     <footer>
-        <span>Copyright 2025, the Sober developers. Sober is not affiliated
-            with Roblox in any way. Sober is unofficial software. Use at
-            your own risk.
-            <a href="/notice.txt">License &amp; legal notice</a></span>
+        <span>
+            Copyright 2025, the Sober developers.
+            Sober is not affiliated with Roblox in any way. Sober is unofficial software.
+            Use at your own risk. <a href="/notice.txt">License &amp; legal notice</a>
+        </span>
     </footer>
-</body>
 
+</body>
 </html>
