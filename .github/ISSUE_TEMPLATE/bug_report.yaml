@@ -9,7 +9,7 @@ body:
       options:
         - label: I have checked if my issue has already been reported, and I am certain that my problem has not already been addressed.
           required: true
-        - label: I have attached logs, screenshots, and other relevant info, and understand that if I haven't, my issue will be closed and ignored.
+        - label: I have attached full logs, screenshots, and other relevant info, and understand that if I haven't, my issue will be closed and ignored.
           required: true
   - type: textarea
     id: what-happened
