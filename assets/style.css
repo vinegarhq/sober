@@ -32,7 +32,7 @@ a {
 }
 
 #banner {
-    background-image: linear-gradient(#eff, #a9ebd7);
+    background-image: linear-gradient(#eff, #98dfd3);
     display: flex;
     flex-direction: column;
     justify-content: center;
