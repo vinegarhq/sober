@@ -19,6 +19,14 @@ h1 {
 h2 {
     font-size: 18pt;
     font-weight: 6000;
+    color: rgb(92, 134, 117);
+}
+
+h2.motto {
+    @media only screen and (max-width: 1280px) {text-align: center;}
+}
+h2.reverse {
+    @media only screen and (min-width: 1281px) {margin-right: 100px; text-align: right;}
 }
 
 p {
@@ -49,6 +57,7 @@ a {
 
 #banner img {
     width: 240px;
+    margin-left: 28px;
 }
 
 section {
@@ -74,7 +83,7 @@ section p {
     }
 }
 
-.horismall {
+.hori-small {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,13 +97,13 @@ section p {
     width: 90vw;
     max-width: 640px;
     border-radius: 8px;
-    box-shadow: 0px 4px 16px #394d43;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    box-shadow: 2px 2px 16px #608171;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
 }
 
 .hori img:hover {
-    scale: 1.1;
-    box-shadow: 0px 0px 32px #394d43;
+    scale: 1.03;
+    box-shadow: 10px 10px 32px #394d43;
 }
 
 .vert {
@@ -103,14 +112,19 @@ section p {
 
 .vert2 {
     display: block;
-    margin-left: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    @media only screen and (min-width: 1280px) {
+        margin-left: 80px;
+    }
+    
 }
 
-.horismall .icon {
+.hori-small .icon {
     width: 64px;
     height: 64px;
-    box-shadow: none;
     margin-inline: 32px;
+
 }
 
 footer {
@@ -146,6 +160,16 @@ footer {
     color: black;
     padding: 16px;
     border-radius: 24px;
+      transition: background 0.25s cubic-bezier(0.075, 0.82, 0.165, 1),
+                  box-shadow 0.25s cubic-bezier(0.075, 0.82, 0.165, 1),
+                  scale 0.16s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover {
+    background: #5ec295;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px #394d4380;
+    scale: 1.03;
 }
 
 .or {
