@@ -1,0 +1,19 @@
+name: Close Inactive Issues
+on: workflow_dispatch
+
+jobs:
+  close-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-issue-stale: 60
+          days-before-issue-close: 0
+          close-issue-message: "This issue has been automatically closed due to inactivity. If this issue still applies to you, please comment."
+          close-issue-label: inactive
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+          debug-only: true
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
