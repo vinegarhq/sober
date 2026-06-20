@@ -9,11 +9,13 @@ jobs:
     steps:
       - uses: actions/stale@v9
         with:
+          operations-per-run: 448
           days-before-issue-stale: 60
           days-before-issue-close: 0
           close-issue-message: "This issue has been automatically closed due to inactivity. If this issue still applies to you, please comment."
           close-issue-label: inactive
+          any-of-labels: 'bug'
           days-before-pr-stale: -1
           days-before-pr-close: -1
-          debug-only: true
+          ascending: true
           repo-token: ${{ secrets.GITHUB_TOKEN }}
