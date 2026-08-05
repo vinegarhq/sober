@@ -27,7 +27,8 @@ body:
   - type: textarea
     id: bug-context
     attributes:
-      label: How could someone else run into the same bug? Provide anything relevant: when the bug started happening, how to get it to happen, etc.
+      label: |
+        How could someone else run into the same bug? Provide anything relevant: when the bug started happening, how to get it to happen, etc.
       placeholder: |
         Example: "I'm using an Intel Celeron G5905 with a pretty old Nvidia GTX 980. The bug started happening after I updated my CachyOS system. Steps to reproduce: join any experience, wait 3 minutes, the client closes by itself."
       description: |
