@@ -13,7 +13,7 @@ body:
           required: true
         - label: I agree that I just checked every box without actually reading anything.
           required: false
-  - type: input
+  - type: textarea
     id: what-went-wrong
     attributes:
       label: In your own words, briefly explain what went wrong
@@ -32,7 +32,7 @@ body:
       placeholder: |
         Example: "I'm using an Intel Celeron G5905 with a pretty old Nvidia GTX 980. The bug started happening after I updated my CachyOS system. Steps to reproduce: join any experience, wait 3 minutes, the client closes by itself."
       description: |
-        📜 Provide the context of the bug: how someone else could get it to happen, whether it started happening after something specific like an update or hardware change, and other relevant insight.
+        📜 **Provide the context of the bug**: how someone else could get it to happen, whether it started happening after something specific like an update or hardware change, and other relevant insight.
         Let us know anything that could hint towards the root cause of the bug, including hardware configuration, Linux distribution, or any other theories you have.
         ⚠️ Do not submit AI-generated text
     validations:
