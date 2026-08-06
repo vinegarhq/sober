@@ -3,31 +3,67 @@ labels: "bug"
 description: Report a problem you're having
 body:
   - type: checkboxes
-    id: terms
+    id: guidelines-confirmation
     attributes:
-      label: Acknowledgement of checking existent issues
+      label: Carefully follow the checklist to get started with the bug report
       options:
         - label: I have checked if my issue has already been reported, and I am certain that my problem has not already been addressed.
           required: true
-        - label: I have attached full logs, screenshots, and other relevant info, and understand that if I haven't, my issue will be closed and ignored.
+        - label: I agree to explain the bug exactly as-is, without using any AI-generated summaries or explanations.
           required: true
-        - label: I agree that I just mindlessly checked every box without actually reading anything.
+        - label: I agree that I just checked every box without actually reading anything.
           required: false
   - type: textarea
-    id: what-happened
+    id: what-went-wrong
     attributes:
-      label: What problem did you encounter?
+      label: In your own words, briefly explain what went wrong
+      placeholder: |
+        Example: "I expected to play normally, but the client closes by itself after 3 minutes."
       description: |
-        Provide a comprehensive description of the problem you're facing.
-        Don't forget to attach any additional resources you may have, such as log files and screenshots. **YOUR ISSUE WILL BE CLOSED IF YOU DO NOT PROVIDE LOGS.**
-        Latest log can be found in `~/.var/app/org.vinegarhq.Sober/data/sober/sober_logs/latest.log`.
+        📃 Let us know what you expected to happen, and what actually happened instead.
+        ⚠️ Do not submit AI-generated text.
     validations:
       required: true
+  - type: textarea
+    id: bug-context
+    attributes:
+      label: |
+        How could someone else run into the same bug? Provide anything relevant: when the bug started happening, how to get it to happen, etc.
+      placeholder: |
+        Example: "I'm using an Intel Celeron G5905 with a pretty old Nvidia GTX 980. The bug started happening after I updated my CachyOS system. Steps to reproduce: join any experience, wait 3 minutes, the client closes by itself."
+      description: |
+        📜 **Provide the context of the bug**: how someone else could get it to happen, whether it started happening after something specific like an update or hardware change, and other relevant insight.
+        Let us know anything that could hint towards the root cause of the bug, including hardware configuration, Linux distribution, or any other theories you have.
+        ⚠️ Do not submit AI-generated text
+    validations:
+      required: true
+  - type: upload
+    id: upload-logs
+    attributes:
+      label: Attach Sober diagnostic logs
+      description: |
+        Sober records debugging information in `~/.var/app/org.vinegarhq.Sober/data/sober/sober_logs/latest.log`.
+        Get the bug to happen, then attach the relevant log file.
+        If Sober crashes, there might be an entry in `~/.var/app/org.vinegarhq.Sober/data/sober/crashes`, which you should also attach if possible.
+        
+        You might need to enable hidden files when picking the log files.
+        
+        If you're absolutely sure the type of issue doesn't require logs, attach an empty file or screenshot instead.
+    validations:
+      required: true
+  - type: upload
+    id: upload-screenshots
+    attributes:
+      label: Upload screenshots
+      description: 📸 If applicable, add screenshots to help explain your problem
+    validations:
+      required: false
   - type: input
     id: game
     attributes:
       label: "Roblox Experience link"
-      description: "If the bug only happens in a certain game, provide it here"
+      description: |
+        Does the bug happen more often on a specific game? Help us by providing the link.
       placeholder: "https://www.roblox.com/games/15211365104"
     validations:
       required: false
